@@ -1,0 +1,31 @@
+@extends('app')
+@section('pagetitle')
+ <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                $MODEL_NAME_PLURAL_CAMEL$
+                <small>$MODEL_NAME_PLURAL_CAMEL$ Control panel</small>
+            </h1>
+            <ol class="breadcrumb">
+                 <li><a href="{!! url('admin') !!}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                 <li><a href="{!! url('admin.$MODEL_NAME$') !!}"><span class="glyphicons glyphicons-list"><span> $MODEL_NAME_PLURAL_CAMEL$</a></li>
+                <li class="active">Add $MODEL_NAME_PLURAL_CAMEL$</li>
+            </ol>
+        </section>
+@endsection
+@section('content')
+<div class="box box-primary">
+    <div class="container-fluid">
+
+        @include('common.errors')
+
+        {!! Form::open(['route' => 'admin.$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
+
+            @include('admin.$MODEL_NAME_PLURAL_CAMEL$.fields')
+
+        {!! Form::close() !!}
+
+
+    </div>
+</div>
+@endsection

@@ -1,0 +1,34 @@
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">{!! $$MODEL_NAME_PLURAL_CAMEL$ !!}</h3>
+    </div><!-- /.box-header -->
+    <div class="box-body">
+        <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+            <div class="row">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table">
+                        <thead>
+                        $FIELD_HEADERS$
+                        <th width="50px">Action</th>
+                        </thead>
+                        <tbody>
+                        @foreach($$MODEL_NAME_PLURAL_CAMEL$ as $$MODEL_NAME_CAMEL$)
+                            <tr>
+                                $FIELD_BODY$
+                                <td>
+                                    <a href="{!! route('admin.$MODEL_NAME_PLURAL_CAMEL$.edit', [$$MODEL_NAME_CAMEL$->id]) !!}"><i class="glyphicon glyphicon-edit"></i></a>
+                                    <a href="{!! route('admin.$MODEL_NAME_PLURAL_CAMEL$.delete', [$$MODEL_NAME_CAMEL$->id]) !!}" onclick="return confirm('Are you sure wants to delete this $MODEL_NAME$?')"><i class="glyphicon glyphicon-remove"></i></a>
+                                </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.box-body -->
+</div>

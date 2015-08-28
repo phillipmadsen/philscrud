@@ -1,0 +1,4 @@
+$menu->add('$MODEL_NAME_PLURAL_CAMEL$', (['class' => 'treeview', 'itemprop' => 'url']), '/$MODEL_NAME$');
+
+hello
+

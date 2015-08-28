@@ -1,0 +1,54 @@
+
+php artisan phillips:crud Category --fieldsFile="/home/vagrant/sites/2local/resources/assets/fields/category.json" --softDelete
+
+
+
+public function show($id)
+{
+    $user = User::find($id);
+    return $this->respondWithItem($user, new UserTransformer);
+}
+ php artisan vendor:publish --provider="Mitul\Generator\GeneratorServiceProvider"
+php artisan vendor:publish --provider="Mitul\Generator\GeneratorServiceProvider" --tag=config
+php artisan vendor:publish --provider="Mitul\Generator\GeneratorServiceProvider" --tag=templates
+
+php artisan mitul.generator:scaffold_api Post --fieldsFile="/Users/Mitul/laravel-api-generator/fields.json"
+php artisan mitul.generator:scaffold_api Post --fieldsFile="fields.json"
+
+php artisan create:scaffold_api User --fieldsFile="/home/vagrant/sites/boots.local/resources/assets/fields/users.json" --softDelete
+
+php artisan mitul.generator:scaffold_api Product --fieldsFile="/home/vagrant/sites/1local/resources/assets/fields/products.json" --softDelete --search
+
+php artisan make:migration:schema create_products_table --schema="product_id:integer:foreign, productname:string, short_description:text, description:text, meta_description:text, product_content:text, image_path:file, schema_html:string, schema_body:string, "
+
+php artisan create:publish --baseController
+
+mitul.generator:scaffold_api Category --fieldsFile="/home/vagrant/sites/1local/resources/assets/fields/category.json" --softDelete --search
+
+mitul.generator:scaffold_api Product --fieldsFile="/home/vagrant/sites/1local/resources/assets/fields/products.json" --softDelete --search
+------------------
+art mitul.generator:scaffold_api Product --fieldsFile="/home/vagrant/sites/1local/resources/assets/fields/products.json" --softDelete --search
+
+art mitul.generator:scaffold_api User --fieldsFile="/home/vagrant/sites/1local/resources/assets/fields/products.json" --softDelete --search
+
+
+php artisan mitul.generator:scaffold_api Category --fieldsFile="/home/vagrant/sites/2local/resources/assets/fields/category.json" --softDelete
+
+
+
+<i class="fa fa-list-ul"></i>
+
+
+php artisan phillips:crud Category --fieldsFile="/home/vagrant/sites/2local/resources/assets/fields/category.json" --softDelete
+
+
+
+php artisan phillips.create:live_admin_api Category --fieldsFile="/home/vagrant/sites/2local/resources/assets/fields/category.json" --softDelete
+
+ art mitul.generator:scaffold_api Product --fieldsFile="/home/vagrant/sites/2local/resources/assets/fields/products.json" --softDelete
+
+ php artisan mitul.generator:scaffold_api Product --fieldsFile="/home/vagrant/sites/2local/resources/assets/fields/products.json" --softDelete
+
+ php artisan mitul.generator:api User --fromTable --tableName=users
+
+php artisan mitul.generator.publish:base_controller "App\Http\Controllers\Controller"

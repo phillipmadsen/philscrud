@@ -1,0 +1,20 @@
+<?php namespace $NAMESPACE_CONTROLLER$;
+
+use $NAMESPACE_REQUEST$;
+use $NAMESPACE_REQUEST$\Create$MODEL_NAME$Request;
+use $NAMESPACE_REQUEST$\Update$MODEL_NAME$Request;
+use $NAMESPACE_REPOSITORY$\$MODEL_NAME$Repository;
+use Flash;
+use $BASE_CONTROLLER$ as AppBaseController;
+use Response;
+
+class $MODEL_NAME$Controller extends AppBaseController
+    {
+
+
+        public function live()
+        {
+            return view('$MODEL_NAME_PLURAL_CAMEL$.live');
+        }
+
+    }

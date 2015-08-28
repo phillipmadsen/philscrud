@@ -1,0 +1,227 @@
+[
+	{
+		"field": "publish:boolean",
+		"type": "checkbox",
+		"validations": ""
+	},
+		{
+		"field": "discontinued:boolean",
+		"type": "checkbox",
+		"validations": ""
+	},
+	{
+		"field": "in_stock:boolean",
+		"type": "checkbox",
+		"validations": ""
+	},
+	{
+		"field": "on_backorder:boolean",
+		"type": "checkbox",
+		"validations": ""
+	},
+	{
+		"field": "productname:string",
+		"type": "text",
+		"validations": "required"
+	},
+	{
+		"field": "short_description:text:nullable",
+		"type": "textarea",
+		"validations": ""
+	},
+	{
+		"field": "description:text:nullable",
+		"type": "textarea",
+		"validations": ""
+	},
+	{
+		"field": "meta_title:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "meta_description:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "meta_keywords:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "available_on:date",
+		"type": "date",
+		"validations": ""
+	},
+	{
+		"field": "upc:integer:unique",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "sku:integer:unique",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "gtin:integer:unique",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "asin:integer:unique",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "mpn:integer:unique",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "model:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "image:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "image_alt:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "tax_status:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "tax_class:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "grace_price:decimal,8,2:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "list_price:decimal,8,2:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "sale_price:decimal,8,2:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "promo_price:decimal,8,2:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "msrp_price:decimal,8,2:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "dealer_price:decimal,8,2:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "employee_price:decimal,8,2:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "sum:integer:unsinged",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "quantity_available:integer:unsinged:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "grace_inventory:integer:unsinged:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "dealer_inventory:integer:unsinged:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "vendor_inventory:integer:unsinged:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "product_video:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "product_doc:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "status:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "tracking:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "category_id:integer:unsigned:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "group:integer:unsigned:nullable",
+		"type": "number",
+		"validations": ""
+	},
+	{
+		"field": "schema_html:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "schema_body:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "schema_content:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "schema_author:string:nullable",
+		"type": "text",
+		"validations": ""
+	},
+	{
+		"field": "ld_json:text:nullable",
+		"type": "textarea",
+		"validations": ""
+	},
+	{
+		"field": "author_id:integer:unsigned:foreign:references,id:on,users:onDelete,cascade",
+		"type": "number",
+		"validations": ""
+	}
+]

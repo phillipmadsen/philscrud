@@ -1,0 +1,22 @@
+[
+	{
+		"field": "category:string:unique:nullable",
+	    "type": "text",
+		"validations": "required"
+	},
+	{
+       "field": "cat_desc:text:nullable",
+	   "type": "text",
+	   "validations": ""
+	},
+	{
+	   "field":"cat_meta_title:string:nullable",
+	   "type": "text",
+	   "validations": ""
+	},
+	{
+	  "field": "cat_meta_desc:text,140:nullable",
+	  "type": "text",
+	  "validations": ""
+	}
+]
